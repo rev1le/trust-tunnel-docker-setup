@@ -1,0 +1,5 @@
+certs/*
+configs/*
+
+!certs/.gitkeep
+!configs/.gitkeep
