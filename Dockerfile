@@ -11,4 +11,6 @@ COPY ./trusttunnel-v1.0.29-linux-x86_64.tar.gz /app/trusttunnel-linux-x86_64.tar
 
 RUN tar -xzf /app/trusttunnel-linux-x86_64.tar.gz -C /app/trusttunnel --strip-components=1
 
+RUN chmod +x  /app/trusttunnel/trusttunnel_endpoint
+
 CMD ["tail", "-f" ,"/dev/null"]
